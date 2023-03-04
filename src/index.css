@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+	/* Colors */
+	--primary-light-cyan: #cee3e9;
+	--primary-neon-green: #52ffa8;
+
+	--neutral-grayish-blue: #4e5d73;
+	--neutral-dark-grayish-blue: #323a49;
+	--neutral-dark-blue: #1f2632;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	user-select: none;
+}
+
+body {
+	background-color: var(--neutral-dark-blue);
+	padding: 1.25rem;
+	font-family: "Manrope", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 0.1px);
+	text-align: center;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	background-color: var(--grayish-blue);
+	padding: 1.25rem 1.25rem 3rem;
+	color: #ffffff;
+	border-radius: 1.25rem;
+	position: relative;
+}
+
+.container h1 {
+	color: var(--neon-green);
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	margin-bottom: 1.25rem;
+	letter-spacing: 0.4rem;
+}
+
+.card {
+	width: 70%;
+	height: 6.25rem;
+	margin: auto;
+	margin-top: 15rem;
+	padding: 1.25rem;
+	background-color: var(--neutral-dark-grayish-blue);
+	align-items: center;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.title {
+	text-align: center;
+	color: var(--primary-neon-green);
+	font-size: 0.875rem;
+	letter-spacing: 0.25em;
+	line-height: 1.1875rem;
+}
+
+.advice {
+	color: var(--primary-light-cyan);
+	font-size: 1.75rem;
+	line-height: 2.375rem;
+	text-align: center;
 }
