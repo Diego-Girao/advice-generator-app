@@ -83,3 +83,11 @@ body {
 .container button:hover {
 	box-shadow: 0 0 30px var(--primary-neon-green-hover);
 }
+
+/* Mobile */
+
+@media (min-width: 500px) {
+	.container {
+		max-width: 30rem;
+	}
+}
