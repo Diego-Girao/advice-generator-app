@@ -1,75 +1,24 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import axios from "axios"
 
 import "./App.css"
 
-class App extends React.Component {
-	state = {
-		advice: "",
-	}
-	// fetchingQuote
-	componentDidMount() {
-		this.fetchAvice()
-	}
+export default function App() {
+	const [advices, setAdvices] = useState({ slip: { advice: "" } })
+
 	//func to fetch quote
-	fetchAvice = () => {
+	useEffect(() => {
 		axios
 			.get("https://api.adviceslip.com/advice")
-			.then((response) => {
-				const { advice } = response.data.slip
-
-				this.setState({ advice })
-			})
-			.catch((error) => {
-				console.log(error)
-			})
-	}
-
-	render() {
-		const { advice } = this.state
-		return (
-			<div className="app">
-				<div className="card">
-					<h1 className="heading">{advice}</h1>
-				</div>
+			.then((response) => setAdvices(response.data))
+			.catch((error) => console.error(error))
+	}, [])
+	return (
+		<div className="app">
+			<div className="card">
+				<h1 className="heading">Random Advices</h1>
+				<p key={advices.slip.id}>{advices.slip.advice}</p>
 			</div>
-		)
-	}
+		</div>
+	)
 }
-
-export default App
-
-// let advices = []
-
-// //Teste de consumo da API AdviceSlip
-// const urlAPI = "https://api.adviceslip.com/advice"
-// getAdvices()
-
-// async function getAdvices() {
-// 	const res = await fetch(urlAPI)
-// 	advices = await res.json()
-// 	console.log(advices)
-// 	console.table(advices.slip.id)
-// 	console.table(advices.slip.advice)
-// }
-
-// function App() {
-// 	return (
-// 		<div className="App">
-// 			<header className="App-header">
-// 				<img src={logo} className="App-logo" alt="logo" />
-// 				<p>
-// 					Edit <code>src/App.js</code> and save to reload.
-// 				</p>
-// 				<a
-// 					className="App-link"
-// 					href="https://reactjs.org"
-// 					target="_blank"
-// 					rel="noopener noreferrer"
-// 				>
-// 					Learn React
-// 				</a>
-// 			</header>
-// 		</div>
-// 	)
-// }
