@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-	background-color: var(--grayish-blue);
+	background-color: var(--neutral-grayish-blue);
 	padding: 1.25rem 1.25rem 3rem;
 	color: #ffffff;
 	border-radius: 1.25rem;
@@ -48,11 +48,23 @@ body {
 }
 
 .container h1 {
-	color: var(--neon-green);
+	color: var(--primary-neon-green);
 	font-size: 0.9rem;
 	text-transform: uppercase;
 	margin-bottom: 1.25rem;
 	letter-spacing: 0.4rem;
+}
+
+.container p {
+	font-size: 1.75rem;
+	color: var(--primary-light-cyan);
+	line-height: 1.5;
+	padding-bottom: 2rem;
+}
+
+.container picture img {
+	background-color: var(--neutral-grayish-blue);
+	position: relative;
 }
 
 .card {
@@ -64,20 +76,5 @@ body {
 	background-color: var(--neutral-dark-grayish-blue);
 	align-items: center;
 	border-radius: 15px;
-	text-align: center;
-}
-
-.title {
-	text-align: center;
-	color: var(--primary-neon-green);
-	font-size: 0.875rem;
-	letter-spacing: 0.25em;
-	line-height: 1.1875rem;
-}
-
-.advice {
-	color: var(--primary-light-cyan);
-	font-size: 1.75rem;
-	line-height: 2.375rem;
 	text-align: center;
 }
