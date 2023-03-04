@@ -1,23 +1,37 @@
 import React, { useEffect, useState } from "react"
-import axios from "axios"
-
-import "./App.css"
+import dice from "./assets/dice.svg"
+import dividerDesktop from "./assets/divider-desktop.svg"
+import dividerMobile from "./assets/divider-mobile.svg"
 
 export default function App() {
-	const [advices, setAdvices] = useState({ slip: { advice: "" } })
+	const [text, setText] = useState([])
 
-	//func to fetch quote
+	const fetchAdvice = async () => {
+		const res = await fetch("https://api.adviceslip.com/advice")
+		const data = await res.json()
+
+		console.log(data)
+
+		setText(data.slip)
+	}
+
 	useEffect(() => {
-		axios
-			.get("https://api.adviceslip.com/advice")
-			.then((response) => setAdvices(response.data))
-			.catch((error) => console.error(error))
+		fetchAdvice()
 	}, [])
 	return (
-		<div className="app">
-			<div className="card">
-				<h1 className="heading">Random Advices</h1>
-				<p key={advices.slip.id}>{advices.slip.advice}</p>
+		<div className="container">
+			<h1>Advice #{text.id}</h1>
+			<p>{text.advice}</p>
+
+			<picture>
+				<source media="(min-width: 768px" srcSet={dividerDesktop} />
+				<img src={dividerMobile} alt="" />
+			</picture>
+
+			<div>
+				<button onClick={fetchAdvice}>
+					<img src={dice} alt="" />
+				</button>
 			</div>
 		</div>
 	)
