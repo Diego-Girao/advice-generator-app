@@ -67,14 +67,25 @@ body {
 	position: relative;
 }
 
-.card {
-	width: 70%;
-	height: 6.25rem;
-	margin: auto;
-	margin-top: 15rem;
-	padding: 1.25rem;
-	background-color: var(--neutral-dark-grayish-blue);
-	align-items: center;
-	border-radius: 15px;
-	text-align: center;
+.container picture::before {
+	content: "";
+	width: 40%;
+	height: 0.0625rem;
+	background-color: var(--primary-light-cyan);
+	right: 1.25rem;
+	bottom: 3.8rem;
+	position: absolute;
+	display: block;
+	z-index: 99;
+}
+
+.container picture::after {
+	content: "";
+	width: 45%;
+	height: 0.0625rem;
+	background-color: var(--primary-light-cyan);
+	left: 0;
+	bottom: 0.74rem;
+	position: relative;
+	display: block;
 }
