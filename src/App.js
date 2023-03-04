@@ -21,7 +21,7 @@ export default function App() {
 	return (
 		<div className="container">
 			<h1>Advice #{text.id}</h1>
-			<p>{text.advice}</p>
+			<p>"{text.advice}"</p>
 
 			<picture>
 				<source media="(min-width: 768px" srcSet={dividerDesktop} />
