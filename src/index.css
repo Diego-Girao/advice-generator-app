@@ -4,6 +4,7 @@
 	/* Colors */
 	--primary-light-cyan: #cee3e9;
 	--primary-neon-green: #52ffa8;
+	--primary-neon-green-hover: #00ff80;
 
 	--neutral-grayish-blue: #4e5d73;
 	--neutral-dark-grayish-blue: #323a49;
@@ -40,7 +41,7 @@ body {
 }
 
 .container {
-	background-color: var(--neutral-grayish-blue);
+	background-color: var(--neutral-dark-grayish-blue);
 	padding: 1.25rem 1.25rem 3rem;
 	color: #ffffff;
 	border-radius: 1.25rem;
@@ -63,29 +64,22 @@ body {
 }
 
 .container picture img {
-	background-color: var(--neutral-grayish-blue);
 	position: relative;
 }
 
-.container picture::before {
-	content: "";
-	width: 40%;
-	height: 0.0625rem;
-	background-color: var(--primary-light-cyan);
-	right: 1.25rem;
-	bottom: 3.8rem;
+.container button {
+	background-color: var(--primary-neon-green);
+	padding: 1.25rem;
+	border: none;
+	border-radius: 50%;
 	position: absolute;
-	display: block;
-	z-index: 99;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -2rem;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
 }
 
-.container picture::after {
-	content: "";
-	width: 45%;
-	height: 0.0625rem;
-	background-color: var(--primary-light-cyan);
-	left: 0;
-	bottom: 0.74rem;
-	position: relative;
-	display: block;
+.container button:hover {
+	box-shadow: 0 0 30px var(--primary-neon-green-hover);
 }
