@@ -7,16 +7,14 @@
 
 </div>
 
-</div>
-
 <br>
 <div align="center">
-<a href="https://advice-generator.netlify.app/"><img width="310px" src="https://img.shields.io/badge/DEPLOY-https%3A%2F%2Fadvice--generator--app.netlify.app%2F-00B37E?style=plastic&logo=netlify" /></a>
+<a href="https://advice-generator-csv.netlify.app/"><img width="310px" src="https://img.shields.io/badge/DEPLOY-https%3A%2F%2Fadvice--generator--csv.netlify.app%2F-00B37E?style=plastic&logo=netlify" /></a>
 
 <br>
-<img src="https://img.shields.io/website?down_color=tomato&down_message=offline&label=todo-app&style=plastic&up_&up_message=online&url=https://todoapp-redux-fm.netlify.app" alt="website badge" />
-<img src="https://img.shields.io/github/issues/Diego-Girao/todo-app-redux?color=cyan&style=plastic" alt="issue badge" />
-<img src="https://img.shields.io/netlify/1fa49e62-9e25-45c5-b611-137049fe3915?style=plastic" alt="netlify badge" />
+<img src="https://img.shields.io/website?down_color=tomato&down_message=offline&label=advice-generator-csv&style=plastic&up_&up_message=online&url=https://advice-generator-csv.netlify.app" alt="website badge" />
+<img src="https://img.shields.io/github/issues/Diego-Girao/advice-generator-app?color=cyan&style=plastic" alt="issue badge" />
+<img src="https://img.shields.io/netlify/ab69cd94-a5f7-4357-9aa0-c005be45d582?style=plastic" alt="netlify badge" />
 
 </div>
 <br>
