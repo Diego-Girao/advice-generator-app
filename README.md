@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+<div align="center">
+<img width="100px" src="public/favicon.png" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+# Advice Generator App - Frontend Mentor
 
-In the project directory, you can run:
+</div>
 
-### `yarn start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
+<div align="center">
+<a href="https://advice-generator.netlify.app/"><img width="310px" src="https://img.shields.io/badge/DEPLOY-https%3A%2F%2Fadvice--generator--app.netlify.app%2F-00B37E?style=plastic&logo=netlify" /></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
+<img src="https://img.shields.io/website?down_color=tomato&down_message=offline&label=todo-app&style=plastic&up_&up_message=online&url=https://todoapp-redux-fm.netlify.app" alt="website badge" />
+<img src="https://img.shields.io/github/issues/Diego-Girao/todo-app-redux?color=cyan&style=plastic" alt="issue badge" />
+<img src="https://img.shields.io/netlify/1fa49e62-9e25-45c5-b611-137049fe3915?style=plastic" alt="netlify badge" />
 
-### `yarn test`
+</div>
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `yarn build`
+Este foi o quinto projeto da mentoria **Conquiste Sua Vaga**, o projeto que escolhi foi inspirado no desafio do Frontend Mentor que era a criação de um gerador de conselhos utilizando a API AdviceSlip.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Sumário
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Overview](#overview)
+  - [O Desafio](#O-Desafio)
+  - [Screenshot](#screenshot)
+- [Meu processo](#Meu-processo)
+  - [Stacks utilizadas](#Stacks-utilizadas)
+  - [O que aprendi](#O-que-aprendi)
+  - [Desenvolvimento Contínuo](#Desenvolvimento-Contínuo)
+- [Author](#author)
+- [Agradecimentos](#Agradecimentos)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Overview
 
-### `yarn eject`
+### O Desafio
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- O desafio era criar um App Gerador de conselhos.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Utilizar a API AdviceSlip para o conselhos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Ver o layout ideal para a interface, dependendo do tamanho da tela do dispositivo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Deixar o layout o mais próximo possível com o template do Desafio.
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **Screenshot - Desktop**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img width="800px" src="src/assets/prints/advice_desktop.png" alt="print da tela da versão desktop" />
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **Screenshot - Mobile**
 
-### Analyzing the Bundle Size
+<img width="320px" src="src/assets/prints/advice_mobile.png" alt="print da tela da versão mobile" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br>
 
-### Making a Progressive Web App
+## Meu processo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Selecionar o projeto a ser realizado
 
-### Advanced Configuration
+- Após selecionar o projeto e ter alguns problemas com a stack inicial, foram 3 mudanças até a stack que foi utilizada, optei por utilizar _HTML5, CSS, Javascript, React e Fetch_, sempre pensando em otimizar o desenvolvimento e aprendizado com a aplicação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Foram realizados alguns wireframes de como seria toda a estrutura do projeto
 
-### Deployment
+- Recriei o template do Frontend Mentor usando o Figma, porém optei por fazer algumas alterções direto no código modificando um pouco o layout final.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Iniciar o desenvolvimento do código na seguinte ordem, html, css e por último as funcionalidades javascript + react + fetch
 
-### `yarn build` fails to minify
+### Stacks utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=Plastic&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=Plastic&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg??style=plastic&logo=javascript) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=Plastic&logo=react&logoColor=%2361DAFB) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=Plastic&logo=git&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=Plastic&logo=netlify&logoColor=#00C7B7)
+
+- [x] HTML5 Semântico
+- [x] CSS
+- [x] JavaScript
+- [x] React
+- [x] Fetch
+
+### O que aprendi
+
+- Refatorar o código para que ele ficasse menor, mais fácil de enter e optei por utilizar po fetch, evitando assim instalar uma lib para consumo de uma API com poucos dados de retorno.
+
+- Aplicar o conceito de que menos é mais e que nem sempre precisamos componentizar tudo.
+
+- Mudei um pouco o layout do desafio, adicionei uma imagem de fundo e um efeito de glowing no botão que chame a atenção do usuário e o leve a clicar no botão.
+
+- Uma grande melhoria na gestão desse projeto ao utilizar o método pomodoro
+
+### Desenvolvimento Contínuo
+
+Algumas melhorias já estão mapeadas para próxima release, são as seguintes:
+
+- [ ] Implementado uma API de imagens para mudar junto com o advice ao ser clicado.
+
+## Author - Diego Girão
+
+[![Github](https://img.shields.io/badge/github-%23121011.svg?style=plastic&logo=github&logoColor=white)](https://github.com/diego-girao) [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=plastic&logo=linkedin&logoColor=white)](https://linkedin.com/in/diego-girao/)
+
+## Agradecimentos
+
+Meu muito obrigado aos mentores **Pedro Marins e Henrique Andrade**, assim como os tutores e meus colegas da turma 23c e da comunidade **Code** no geral, vocês são excelentes e estão sempre dispostos a ajudar, parabéns a todos os envolvidos.
