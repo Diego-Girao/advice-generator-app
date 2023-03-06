@@ -5,6 +5,8 @@
 
 # Advice Generator App - Frontend Mentor
 
+[src_assets_prints_advice.webm](https://user-images.githubusercontent.com/70491871/223278680-2571bcd0-e90e-4280-97e6-3a7ca3e73710.webm)
+
 </div>
 
 <br>
