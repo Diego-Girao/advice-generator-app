@@ -35,6 +35,8 @@ body {
 	justify-content: center;
 	height: calc(100vh - 0.1px);
 	text-align: center;
+	background-image: url("./assets/background.jpg");
+	background-position: center;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -46,6 +48,7 @@ body {
 	color: #ffffff;
 	border-radius: 1.25rem;
 	position: relative;
+	box-shadow: 15px 18px 15px var(--neutral-dark-blue);
 }
 
 .container h1 {
