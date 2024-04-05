@@ -87,7 +87,7 @@ Este foi o quinto projeto da mentoria **Conquiste Sua Vaga**, o projeto que esco
 
 ### O que aprendi
 
-- Refatorar o código para que ele ficasse menor, mais fácil de enter e optei por utilizar po fetch, evitando assim instalar uma lib para consumo de uma API com poucos dados de retorno.
+- Refatorar o código para que ele ficasse menor, mais fácil de entender e optei por utilizar po fetch, evitando assim instalar uma lib para consumo de uma API com poucos dados de retorno.
 
 - Aplicar o conceito de que menos é mais e que nem sempre precisamos componentizar tudo.
 
